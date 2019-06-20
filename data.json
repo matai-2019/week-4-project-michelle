@@ -99,23 +99,15 @@
     "answers": ["F&F: Tokyo Drift","Gone in 60 seconds", "Speed Racer", "Jackass"]
   },
   {
-    "question": "qs",
-    "answers": [" "," ", " ", " "]
+    "question": "Are you a cop?",
+    "answers": ["Yes, I am a police officer","No way, dude", "Whoa, calm down", "Why is this relevant?"]
   },
   {
-    "question": "qs",
-    "answers": [" "," ", " ", " "]
+    "question": "A plane crashes on the United States - Canada border. Where are the survivors buried?",
+    "answers": ["Depends on nationality","Canada", "United States", "Mexico"]
   },
   {
-    "question": "qs",
-    "answers": [" "," ", " ", " "]
-  },
-  {
-    "question": "qs",
-    "answers": [" "," ", " ", " "]
-  },
-  {
-    "question": "qs",
-    "answers": [" "," ", " ", " "]
+    "question": "Cat is to Dog, as Snake is to ...",
+    "answers": ["Grasshopper","Dog", "Alligator", "Grass"]
   }]
 }
