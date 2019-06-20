@@ -1,0 +1,108 @@
+{
+  "profile": [
+    {
+      "spiritAnimal": [{
+        "name": "Stink",
+        "image": ""
+      },
+      {
+        "name": "Bug",
+        "image": "link"
+      },
+      {
+        "name": "Dung",
+        "image": "link"
+      },
+      {
+        "name": "Beetle",
+        "image": "link"
+      },
+      {
+        "name": "Slug",
+        "image": "link"
+      },
+      {
+        "name": "Kung Fu Panda",
+        "image": "link"
+      },
+      {
+        "name": "Purple frog",
+        "image": "/images/purpleFrog.jpg"
+      },
+      {
+        "name": "Shoebill",
+        "image": "/images/shoebill.jpg"
+      },
+      {
+        "name": "Sri Lanka Frogmouth",
+        "image": "sriLankaFrogMouth.jpg"
+      },
+      {
+        "name": "Venezuelan Paddel Moth",
+        "image": "venezuelanPoddleMoth.jpg"
+      },
+      {
+        "name": "Water Opossum",
+        "image": "/images/waterOpossum.jpg"
+      }],
+      "age": [
+
+      ],
+      "starSign": [
+
+      ],
+      "faveFood": [
+
+      ],
+      "faveGymExcercise": [
+
+      ],
+      "faveClothingItem": [
+
+      ],
+      "car": [
+
+      ],
+      "superpower": [
+
+      ],
+      "weakness": [
+
+      ],
+      "fetish": [
+
+      ]
+    }
+  ],
+  "questions": [{
+    "question": "qs",
+    "answers": []
+  },{
+    "question": "qs",
+    "answers": []
+  },
+  {
+    "question": "qs",
+    "answers": []
+  },
+  {
+    "question": "qs",
+    "answers": []
+  },
+  {
+    "question": "qs",
+    "answers": []
+  },
+  {
+    "question": "qs",
+    "answers": []
+  },
+  {
+    "question": "qs",
+    "answers": []
+  },
+  {
+    "question": "qs",
+    "answers": []
+  }]
+}
