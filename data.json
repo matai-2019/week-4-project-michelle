@@ -63,24 +63,24 @@
         "6ft long legs",
         "thick arteries"
       ],
-      "weakness": ["blond girls", "creepy clowns", "melt with rain", "die if not looked at facebook for a day", "headstones", "toddlers", "Kim Jung Un", "scissors"],
+      "weakness": ["blond people", "creepy clowns", "melt with rain", "die if not looked at facebook for a day", "headstones", "toddlers", "Kim Jung Un", "scissors"],
       "fetish": ["smell of petrol", "playing with veggies in soup", "collecting wine corks for a raft", "old suitcases", "pain", "handcuffs", "robots", "skylines"]
     }
   ],
   "questions": [{
     "question": "Do you have all 4 wisdom teeth?",
-    "answers": ["yes","no", "I don't know", "What are wisdom teeth?"]
+    "answers": ["yes", "no", "I don't know", "What are wisdom teeth?"]
   },{
     "question": "You are in a car with alpaca, sheep and chicken. What do you do?",
     "answers": ["keep driving","ask sheep to leave", "take a navigator seat", " invite a hedgehog to join"]
   },
   {
     "question": "What’s the first thing that comes to your mind when you think about vacation?",
-    "answers": ["pancakes","goat!", "white walls", "albino peackok"]
+    "answers": ["pancakes", "goat!", "white walls", "albino peackok"]
   },
   {
     "question": "Pick a pillow you would sleep on:",
-    "answers": ["I don’t use pillows","memory foam", "down ", "doesn’t matter"]
+    "answers": ["I don’t use pillows", "memory foam", "down ", "doesn’t matter"]
   },
   {
     "question": "In the kitchen your favourite utensil is:",
@@ -92,7 +92,7 @@
   },
   {
     "question": "In your dreams, you: ",
-    "answers": ["throw shitty punches","run really slowly", "can jump high enough to consider it flying", "die a lot"]
+    "answers": ["throw shitty punches", "run really slowly", "can jump high enough to consider it flying", "die a lot"]
   },
   {
     "question": "Your favourite movie is:",
