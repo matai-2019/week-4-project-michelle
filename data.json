@@ -2,28 +2,28 @@
   "profile": [
     {
       "spiritAnimal": [{
-        "name": "Stink",
-        "image": ""
+        "name": "Skunk",
+        "image": "/images/skunk.jpg"
       },
       {
-        "name": "Bug",
-        "image": "link"
+        "name": "Mosquito",
+        "image": "/images/mosquito.jpg"
       },
       {
         "name": "Dung",
-        "image": "link"
+        "image": "/images/dung.jpg"
       },
       {
-        "name": "Beetle",
-        "image": "link"
+        "name": "Stag Beetle",
+        "image": "/images/stagBeetle.jpg"
       },
       {
-        "name": "Slug",
-        "image": "link"
+        "name": "Monster Slug",
+        "image": "/images/monsterSlug.jpg"
       },
       {
         "name": "Kung Fu Panda",
-        "image": "link"
+        "image": "/images/kungfuPanda.jpg"
       },
       {
         "name": "Purple frog",
@@ -35,83 +35,79 @@
       },
       {
         "name": "Sri Lanka Frogmouth",
-        "image": "sriLankaFrogMouth.jpg"
+        "image": "/images/sriLankaFrogMouth.jpg"
       },
       {
         "name": "Venezuelan Paddel Moth",
-        "image": "venezuelanPoddleMoth.jpg"
+        "image": "/images/venezuelanPoddleMoth.jpg"
       },
       {
         "name": "Water Opossum",
         "image": "/images/waterOpossum.jpg"
       }],
       "age": ["sprout", "grey in places", "know it all, remeber nothing", "dinasour"],
-      "starSign": ["Seahorse", "Three Legged Cow", "Sleeping Hippo", "Dancing Spider"],
+      "starSign": ["Seahorse", "Three Legged Cow", "Sleeping Hippo", "Dancing Spider", "Unicorn"],
       "faveFood": [ "chicken’s feet", "vegemite", "frog legs", "last years cheesburger", "duck feet", "dried crickets"],
-      "faveGymExcercise": [""],
-      "faveClothingItem": [""],
-      "car": [""],
+      "faveGymExcercise": ["one extra loud push up", "walking around with heavy dumbel", "duck walk", "one legged cyclist"],
+      "faveClothingItem": ["zebra tights", "orange (prison) overalls", "G-string", "white kimono with ketchup stains"],
+      "car": ["pumpkin carriage", "flying carpet", "ice cream truck", "ostrich", "Honda Civic", "Porsche lego model", "The entire Hot Wheels Collection", "Countdown Trolley"],
       "superpower": ["ability to remember names of a group of people you have just met", 
         "ability to make hand shadow puppets in any shape", 
         "ability to always locate your keys",
         "ability to see through clothing",
         "you are never hungry",
         "ability to communicate with fruits",
-        "ability to change TV channels at will"
+        "ability to change TV channels at will",
+        "medium strength", 
+        "huge thighs",
+        "6ft long legs",
+        "thick arteries"
       ],
-      "weakness": [""],
-      "fetish": [""]
+      "weakness": ["blond people", "creepy clowns", "melt with rain", "die if not looked at facebook for a day", "headstones", "toddlers", "Kim Jung Un", "scissors"],
+      "fetish": ["smell of petrol", "playing with veggies in soup", "collecting wine corks for a raft", "old suitcases", "pain", "handcuffs", "robots", "skylines"]
     }
   ],
   "questions": [{
     "question": "Do you have all 4 wisdom teeth?",
-    "answers": ["yes","no", "I don't know", "What are wisdom teeth?"]
+    "answers": ["yes", "no", "I don't know", "What are wisdom teeth?"]
   },{
     "question": "You are in a car with alpaca, sheep and chicken. What do you do?",
     "answers": ["keep driving","ask sheep to leave", "take a navigator seat", " invite a hedgehog to join"]
   },
   {
     "question": "What’s the first thing that comes to your mind when you think about vacation?",
-    "answers": ["pancakes","goat!", "white walls", "albino peackok"]
+    "answers": ["pancakes", "goat!", "white walls", "albino peackok"]
   },
   {
     "question": "Pick a pillow you would sleep on:",
-    "answers": ["I don’t use pillows","memory foam", "down ", "doesn’t matter"]
+    "answers": ["I don’t use pillows", "memory foam", "down ", "doesn’t matter"]
   },
   {
-    "question": "qs",
-    "answers": [" "," ", " ", " "]
+    "question": "In the kitchen your favourite utensil is:",
+    "answers": ["knife","fork", "rollerpin", "mug"]
   },
   {
-    "question": "qs",
-    "answers": [" "," ", " ", " "]
+    "question": "You are most scared of:",
+    "answers": ["ghosts","children", "koreans", "barbers"]
   },
   {
-    "question": "qs",
-    "answers": [" "," ", " ", " "]
+    "question": "In your dreams, you: ",
+    "answers": ["throw shitty punches", "run really slowly", "can jump high enough to consider it flying", "die a lot"]
   },
   {
-    "question": "qs",
-    "answers": [" "," ", " ", " "]
+    "question": "Your favourite movie is:",
+    "answers": ["F&F: Tokyo Drift","Gone in 60 seconds", "Speed Racer", "Jackass"]
   },
   {
-    "question": "qs",
-    "answers": [" "," ", " ", " "]
+    "question": "Are you a cop?",
+    "answers": ["Yes, I am a police officer","No way, dude", "Whoa, calm down", "Why is this relevant?"]
   },
   {
-    "question": "qs",
-    "answers": [" "," ", " ", " "]
+    "question": "A plane crashes on the United States - Canada border. Where are the survivors buried?",
+    "answers": ["Depends on nationality","Canada", "United States", "Mexico"]
   },
   {
-    "question": "qs",
-    "answers": [" "," ", " ", " "]
-  },
-  {
-    "question": "qs",
-    "answers": [" "," ", " ", " "]
-  },
-  {
-    "question": "qs",
-    "answers": [" "," ", " ", " "]
+    "question": "Cat is to Dog, as Snake is to ...",
+    "answers": ["Grasshopper","Dog", "Alligator", "Grass"]
   }]
 }
