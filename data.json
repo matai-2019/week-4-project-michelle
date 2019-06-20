@@ -45,64 +45,73 @@
         "name": "Water Opossum",
         "image": "/images/waterOpossum.jpg"
       }],
-      "age": [
-
+      "age": ["sprout", "grey in places", "know it all, remeber nothing", "dinasour"],
+      "starSign": ["Seahorse", "Three Legged Cow", "Sleeping Hippo", "Dancing Spider"],
+      "faveFood": [ "chicken’s feet", "vegemite", "frog legs", "last years cheesburger", "duck feet", "dried crickets"],
+      "faveGymExcercise": [""],
+      "faveClothingItem": [""],
+      "car": [""],
+      "superpower": ["ability to remember names of a group of people you have just met", 
+        "ability to make hand shadow puppets in any shape", 
+        "ability to always locate your keys",
+        "ability to see through clothing",
+        "you are never hungry",
+        "ability to communicate with fruits",
+        "ability to change TV channels at will"
       ],
-      "starSign": [
-
-      ],
-      "faveFood": [
-
-      ],
-      "faveGymExcercise": [
-
-      ],
-      "faveClothingItem": [
-
-      ],
-      "car": [
-
-      ],
-      "superpower": [
-
-      ],
-      "weakness": [
-
-      ],
-      "fetish": [
-
-      ]
+      "weakness": [""],
+      "fetish": [""]
     }
   ],
   "questions": [{
-    "question": "qs",
-    "answers": []
+    "question": "Do you have all 4 wisdom teeth?",
+    "answers": ["yes","no", "I don't know", "What are wisdom teeth?"]
   },{
-    "question": "qs",
-    "answers": []
+    "question": "You are in a car with alpaca, sheep and chicken. What do you do?",
+    "answers": ["keep driving","ask sheep to leave", "take a navigator seat", " invite a hedgehog to join"]
+  },
+  {
+    "question": "What’s the first thing that comes to your mind when you think about vacation?",
+    "answers": ["pancakes","goat!", "white walls", "albino peackok"]
+  },
+  {
+    "question": "Pick a pillow you would sleep on:",
+    "answers": ["I don’t use pillows","memory foam", "down ", "doesn’t matter"]
   },
   {
     "question": "qs",
-    "answers": []
+    "answers": [" "," ", " ", " "]
   },
   {
     "question": "qs",
-    "answers": []
+    "answers": [" "," ", " ", " "]
   },
   {
     "question": "qs",
-    "answers": []
+    "answers": [" "," ", " ", " "]
   },
   {
     "question": "qs",
-    "answers": []
+    "answers": [" "," ", " ", " "]
   },
   {
     "question": "qs",
-    "answers": []
+    "answers": [" "," ", " ", " "]
   },
   {
     "question": "qs",
-    "answers": []
+    "answers": [" "," ", " ", " "]
+  },
+  {
+    "question": "qs",
+    "answers": [" "," ", " ", " "]
+  },
+  {
+    "question": "qs",
+    "answers": [" "," ", " ", " "]
+  },
+  {
+    "question": "qs",
+    "answers": [" "," ", " ", " "]
   }]
 }
