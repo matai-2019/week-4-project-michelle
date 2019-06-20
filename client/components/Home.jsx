@@ -8,9 +8,9 @@ const Home = (props) => {
       <form onSubmit={props.handleSubmit}>
         <label>
           Please enter your name:
-          <input type="text" onChange={props.handleChange} />
+          <input type="text" name='name' onChange={props.handleChange} />
         </label>
-        <input type="submit" value="Submit" />
+        <Link to={`/0`}><button>Next</button></Link>
       </form>
     </>
   )

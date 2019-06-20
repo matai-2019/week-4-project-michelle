@@ -3,6 +3,7 @@ import { HashRouter as Router, Route, Switch } from "react-router-dom";
 
 import Home from './Home'
 import Question from './Question'
+import data from '../../data.json'
 
 class App extends React.Component {
   constructor(props) {
@@ -11,8 +12,13 @@ class App extends React.Component {
   }
 
   handleChange = (event) => {
-    console.log(event)
-    this.setState({value: event.target.value});
+    const target = event.target;
+    const value = target.type === 'checkbox' ? target.checked : target.value;
+    const name = target.name;
+
+    this.setState({
+      [name]: value
+    });
   }
 
   handleSubmit = (event) => {
@@ -24,14 +30,14 @@ class App extends React.Component {
     return (
       <Router>
         <Switch>
-        <Route exact path="/" render={(routeProps) => (
+          <Route exact path="/" render={(routeProps) => (
             <Home handleChange={this.handleChange} handleSubmit={this.handleSubmit} {...routeProps} />
           )} />
           <Route path="/:id" render={(routeProps) => (
-            <Question data={data} handleChange={this.handleChange} handleSubmit={this.handleSubmit} {...routeProps} />
+            <Question data={data.questions} handleChange={this.handleChange} handleSubmit={this.handleSubmit} {...routeProps} />
           )} />
           <Route path="/profile" render={(routeProps) => (
-            <Profile data={data} {...routeProps} />
+            <Profile profile={data.profile} name={this.state.name} {...routeProps} />
           )} />
         </Switch>
       </Router>

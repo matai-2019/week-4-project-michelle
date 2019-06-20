@@ -100,6 +100,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
 /* harmony import */ var _Home__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Home */ "./client/components/Home.jsx");
 /* harmony import */ var _Question__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Question */ "./client/components/Question.jsx");
+/* harmony import */ var _data_json__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../data.json */ "./data.json");
+var _data_json__WEBPACK_IMPORTED_MODULE_4___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../../data.json */ "./data.json", 1);
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
@@ -127,6 +129,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 
 
+
 var App =
 /*#__PURE__*/
 function (_React$Component) {
@@ -140,11 +143,11 @@ function (_React$Component) {
     _this = _possibleConstructorReturn(this, _getPrototypeOf(App).call(this, props));
 
     _defineProperty(_assertThisInitialized(_this), "handleChange", function (event) {
-      console.log(event);
+      var target = event.target;
+      var value = target.type === 'checkbox' ? target.checked : target.value;
+      var name = target.name;
 
-      _this.setState({
-        value: event.target.value
-      });
+      _this.setState(_defineProperty({}, name, value));
     });
 
     _defineProperty(_assertThisInitialized(_this), "handleSubmit", function (event) {
@@ -174,7 +177,7 @@ function (_React$Component) {
         path: "/:id",
         render: function render(routeProps) {
           return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Question__WEBPACK_IMPORTED_MODULE_3__["default"], _extends({
-            data: data,
+            data: _data_json__WEBPACK_IMPORTED_MODULE_4__.questions,
             handleChange: _this2.handleChange,
             handleSubmit: _this2.handleSubmit
           }, routeProps));
@@ -183,7 +186,8 @@ function (_React$Component) {
         path: "/profile",
         render: function render(routeProps) {
           return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Profile, _extends({
-            data: data
+            profile: _data_json__WEBPACK_IMPORTED_MODULE_4__.profile,
+            name: _this2.state.name
           }, routeProps));
         }
       })));
@@ -217,11 +221,11 @@ var Home = function Home(props) {
     onSubmit: props.handleSubmit
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", null, "Please enter your name:", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
     type: "text",
+    name: "name",
     onChange: props.handleChange
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-    type: "submit",
-    value: "Submit"
-  })));
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    to: "/0"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", null, "Next"))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Home);
@@ -244,16 +248,20 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var Question = function Question(props) {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Anti-personality Test"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", null, props.answers.map(function (answer) {
+  var id = Number(props.match.params.id);
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Anti-personality Test"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, props.data[id].question), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", null, props.data[id].answers.map(function (answer, i) {
     return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
       className: "radio"
     }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
       type: "radio",
-      name: "bob",
-      value: "option1",
+      name: "question".concat(id),
+      value: i,
+      onChange: props.handleChange,
       checked: false
-    }), "test"));
-  })));
+    }), answer));
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    to: "/".concat(id + 1)
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", null, "Next"))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Question);
@@ -280,6 +288,17 @@ __webpack_require__.r(__webpack_exports__);
 document.addEventListener('DOMContentLoaded', function () {
   react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_App__WEBPACK_IMPORTED_MODULE_2__["default"], null), document.getElementById('app'));
 });
+
+/***/ }),
+
+/***/ "./data.json":
+/*!*******************!*\
+  !*** ./data.json ***!
+  \*******************/
+/*! exports provided: profile, questions, default */
+/***/ (function(module) {
+
+module.exports = {"profile":[{"spiritAnimal":[{"name":"Stink","image":""},{"name":"Bug","image":"link"},{"name":"Dung","image":"link"},{"name":"Beetle","image":"link"},{"name":"Slug","image":"link"},{"name":"Kung Fu Panda","image":"link"},{"name":"Purple frog","image":"/images/purpleFrog.jpg"},{"name":"Shoebill","image":"/images/shoebill.jpg"},{"name":"Sri Lanka Frogmouth","image":"sriLankaFrogMouth.jpg"},{"name":"Venezuelan Paddel Moth","image":"venezuelanPoddleMoth.jpg"},{"name":"Water Opossum","image":"/images/waterOpossum.jpg"}],"age":["sprout","grey in places","know it all, remeber nothing","dinasour"],"starSign":["Seahorse","Three Legged Cow","Sleeping Hippo","Dancing Spider"],"faveFood":["chicken’s feet","vegemite","frog legs","last years cheesburger","duck feet","dried crickets"],"faveGymExcercise":[""],"faveClothingItem":[""],"car":[""],"superpower":["ability to remember names of a group of people you have just met","ability to make hand shadow puppets in any shape","ability to always locate your keys","ability to see through clothing","you are never hungry","ability to communicate with fruits","ability to change TV channels at will"],"weakness":[""],"fetish":[""]}],"questions":[{"question":"Do you have all 4 wisdom teeth?","answers":["yes","no","I don't know","What are wisdom teeth?"]},{"question":"You are in a car with alpaca, sheep and chicken. What do you do?","answers":["keep driving","ask sheep to leave","take a navigator seat"," invite a hedgehog to join"]},{"question":"What’s the first thing that comes to your mind when you think about vacation?","answers":["pancakes","goat!","white walls","albino peackok"]},{"question":"Pick a pillow you would sleep on:","answers":["I don’t use pillows","memory foam","down ","doesn’t matter"]},{"question":"qs","answers":[" "," "," "," "]},{"question":"qs","answers":[" "," "," "," "]},{"question":"qs","answers":[" "," "," "," "]},{"question":"qs","answers":[" "," "," "," "]},{"question":"qs","answers":[" "," "," "," "]},{"question":"qs","answers":[" "," "," "," "]},{"question":"qs","answers":[" "," "," "," "]},{"question":"qs","answers":[" "," "," "," "]},{"question":"qs","answers":[" "," "," "," "]}]};
 
 /***/ }),
 
