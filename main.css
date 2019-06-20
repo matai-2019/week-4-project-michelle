@@ -1,16 +1,48 @@
 body {
   font-family: 'Lato', sans-serif;
-  color:#191818;
+  font-weight: 300;
+  color: white;
+  background-color:#191818;
+}
+
+.center {
+  margin: 0px auto;
+  text-align: center;
+  justify-content: center;
 }
 
 .head {
-  font-size: 100px;;
+  margin: 50px;
+  font-size: 100px;
   font-family: 'Montserrat', sans-serif;
-  color:blue;
+}
+
+.question {
+  max-width: 1500px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-size: 40px;
 }
 
 .answer {
   font-size: 50px;
-  font-family: 'Montserrat', sans-serif;
+  line-height: 90px;
   color: orange;
+  min-height: 100px;
+  width: 650px;
+  background-color: white;
+  margin: 0px 20px;
+  padding: 0px 20px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.answer:hover {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23); 
+}
+
+.answerContainer {
+  display: flex;
+  flex-direction: row;
+  padding: 40px;
 }
