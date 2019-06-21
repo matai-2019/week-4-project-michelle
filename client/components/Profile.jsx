@@ -1,7 +1,8 @@
 import React from 'react'
+import ClickMe from './ClickMe'
 
 const random = (length) => {
-  return Math.floor(Math.random()  * Math.floor(length))
+  return Math.floor(Math.random() * Math.floor(length))
 }
 
 const Profile = (props) => {
@@ -25,16 +26,18 @@ const Profile = (props) => {
         <img src={profile.spiritAnimal[spiritAnimalIndex].image}></img>
       </div>
       <div>
-      <p>Age: {profile.age[ageIndex]}</p>
-      <p>Star Sign: {profile.starSign[starSignIndex]}</p>
-      <p>Fav Food: {profile.faveFood[faveFoodIndex]}</p>
-      <p>Fav Gym Exercise: {profile.faveGymExcercise[faveGymExcerciseIndex]}</p>
-      <p>Fav Clothing Item: {profile.faveClothingItem[faveClothingItemIndex]}</p>
-      <p>Fav Car: {profile.car[carIndex]}</p>
-      <p>Your Superpower: {profile.superpower[superpowerIndex]}</p>
-      <p>Your Weakness: {profile.weakness[weaknessIndex]}</p>
-      <p>Your Fetish: {profile.fetish[fetishIndex]}</p>
+        <p>Age: {profile.age[ageIndex]}</p>
+        <p>Star Sign: {profile.starSign[starSignIndex]}</p>
+        <p>Fav Food: {profile.faveFood[faveFoodIndex]}</p>
+        <p>Fav Gym Exercise: {profile.faveGymExcercise[faveGymExcerciseIndex]}</p>
+        <p>Fav Clothing Item: {profile.faveClothingItem[faveClothingItemIndex]}</p>
+        <p>Fav Car: {profile.car[carIndex]}</p>
+        <p>Your Superpower: {profile.superpower[superpowerIndex]}</p>
+        <p>Your Weakness: {profile.weakness[weaknessIndex]}</p>
+        <p>Your Fetish: {profile.fetish[fetishIndex]}</p>
       </div>
+      <ClickMe />
+
     </>
   )
 }
