@@ -11,6 +11,14 @@ body {
   justify-content: center;
 }
 
+.fade {
+  animation: fade-in-keyframes 1s;
+}
+@keyframes fade-in-keyframes {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+
 .head {
   margin: 50px;
   font-size: 100px;

@@ -208,9 +208,14 @@ function (_React$Component) {
 /*!***************************************!*\
   !*** ./client/components/ClickMe.jsx ***!
   \***************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return ClickMe; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -228,6 +233,8 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+
 
 var ClickMe =
 /*#__PURE__*/
@@ -252,7 +259,7 @@ function (_React$Component) {
       var _this2 = this;
 
       var fade = this.state.fade;
-      return React.createElement("button", {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
         ref: "button",
         onClick: function onClick() {
           return _this2.setState({
@@ -270,7 +277,9 @@ function (_React$Component) {
   }]);
 
   return ClickMe;
-}(React.Component);
+}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
+
+
 
 /***/ }),
 
@@ -317,7 +326,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _ClickMe__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ClickMe */ "./client/components/ClickMe.jsx");
-/* harmony import */ var _ClickMe__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_ClickMe__WEBPACK_IMPORTED_MODULE_1__);
 
 
 
@@ -339,7 +347,7 @@ var Profile = function Profile(props) {
   var spiritAnimalIndex = random(profile.spiritAnimal.length);
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Anti-personality Test"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "".concat(props.name, ", here is your personality")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Spirit Animal: ", profile.spiritAnimal[spiritAnimalIndex].name), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: profile.spiritAnimal[spiritAnimalIndex].image
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Age: ", profile.age[ageIndex]), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Star Sign: ", profile.starSign[starSignIndex]), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Fav Food: ", profile.faveFood[faveFoodIndex]), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Fav Gym Exercise: ", profile.faveGymExcercise[faveGymExcerciseIndex]), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Fav Clothing Item: ", profile.faveClothingItem[faveClothingItemIndex]), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Fav Car: ", profile.car[carIndex]), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Your Superpower: ", profile.superpower[superpowerIndex]), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Your Weakness: ", profile.weakness[weaknessIndex]), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Your Fetish: ", profile.fetish[fetishIndex])), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ClickMe__WEBPACK_IMPORTED_MODULE_1___default.a, null));
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Age: ", profile.age[ageIndex]), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Star Sign: ", profile.starSign[starSignIndex]), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Fav Food: ", profile.faveFood[faveFoodIndex]), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Fav Gym Exercise: ", profile.faveGymExcercise[faveGymExcerciseIndex]), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Fav Clothing Item: ", profile.faveClothingItem[faveClothingItemIndex]), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Fav Car: ", profile.car[carIndex]), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Your Superpower: ", profile.superpower[superpowerIndex]), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Your Weakness: ", profile.weakness[weaknessIndex]), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Your Fetish: ", profile.fetish[fetishIndex])), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ClickMe__WEBPACK_IMPORTED_MODULE_1__["default"], null));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Profile);
@@ -24236,7 +24244,7 @@ if (false) {} else {
 /*!***************************************************************!*\
   !*** ./node_modules/react-router-dom/esm/react-router-dom.js ***!
   \***************************************************************/
-/*! exports provided: BrowserRouter, HashRouter, Link, NavLink, MemoryRouter, Prompt, Redirect, Route, Router, StaticRouter, Switch, generatePath, matchPath, withRouter, __RouterContext */
+/*! exports provided: MemoryRouter, Prompt, Redirect, Route, Router, StaticRouter, Switch, generatePath, matchPath, withRouter, __RouterContext, BrowserRouter, HashRouter, Link, NavLink */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
