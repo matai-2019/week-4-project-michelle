@@ -19,13 +19,15 @@ const Profile = (props) => {
   const spiritAnimalIndex = random(profile.spiritAnimal.length)
   return (
     <>
-      <h1>Anti-personality Test</h1>
-      <h3>{`${props.name}, here is your personality`}</h3>
-      <div>
-        <p>Spirit Animal: {profile.spiritAnimal[spiritAnimalIndex].name}</p>
-        <img src={profile.spiritAnimal[spiritAnimalIndex].image}></img>
+      <div className="almostCentered">
+        <h1 className="head center">ANTI-PERSONALITY TEST</h1>
+        <h3>{`${props.name}, here is your personality`}</h3>
+        <div>
+          <p>Spirit Animal: {profile.spiritAnimal[spiritAnimalIndex].name}</p>
+          <img src={profile.spiritAnimal[spiritAnimalIndex].image}></img>
+        </div>
       </div>
-      <div>
+      <div className="shitty">
         <p>Age: {profile.age[ageIndex]}</p>
         <p>Star Sign: {profile.starSign[starSignIndex]}</p>
         <p>Fav Food: {profile.faveFood[faveFoodIndex]}</p>

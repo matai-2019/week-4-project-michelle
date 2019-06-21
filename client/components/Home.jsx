@@ -4,13 +4,13 @@ import { Link } from 'react-router-dom'
 const Home = (props) => {
   return (
     <>
-      <h1>Anti-personality Test</h1>
-      <form onSubmit={props.handleSubmit}>
+    <h1 className="head center">ANTI-PERSONALITY TEST</h1>
+      <form className="center" onSubmit={props.handleSubmit}>
         <label>
-          Please enter your name:
-          <input type="text" name='name' onChange={props.handleChange} />
+          please enter ur name <br></br>
+          <input type="text" name='name' placeholder="name pls" onChange={props.handleChange} />
         </label>
-        <Link to={`/0`}><button>Next</button></Link>
+        <Link to={`/0`}><button>b u t t on</button></Link>
       </form>
     </>
   )
