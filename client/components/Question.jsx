@@ -34,7 +34,7 @@ const Question = (props) => {
           return (
             <label className="answer container" key={i}>
               <input className="radio" type="radio" name={`question${id}`} value={i} id={i} onChange={props.handleChange} />
-              <span class="checkmark"></span>{answer}
+              <span className="checkmark"></span>{answer}
             </label>
 
           )

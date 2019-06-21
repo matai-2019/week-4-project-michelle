@@ -1,4 +1,6 @@
-class ClickMe extends React.Component {
+import React, { Component } from 'react'
+
+export default class ClickMe extends Component {
   constructor(props) {
     super(props)
     this.state = { fade: false }
