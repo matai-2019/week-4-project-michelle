@@ -208,9 +208,14 @@ function (_React$Component) {
 /*!***************************************!*\
   !*** ./client/components/ClickMe.jsx ***!
   \***************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return ClickMe; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -221,13 +226,17 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
 function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
 
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+
 
 var ClickMe =
 /*#__PURE__*/
@@ -240,8 +249,26 @@ function (_React$Component) {
     _classCallCheck(this, ClickMe);
 
     _this = _possibleConstructorReturn(this, _getPrototypeOf(ClickMe).call(this, props));
+
+    _defineProperty(_assertThisInitialized(_this), "getCoordinates", function () {
+      var randX = Math.floor(Math.random() * (window.innerWidth - 100));
+      var randY = Math.floor(Math.random() * (window.innerHeight - 100));
+
+      _this.setState({
+        buttonstyle: {
+          top: randX,
+          left: randY,
+          position: 'absolute'
+        }
+      });
+    });
+
     _this.state = {
-      fade: false
+      buttonstyle: {
+        top: 0,
+        left: 50,
+        position: 'relative'
+      }
     };
     return _this;
   }
@@ -249,28 +276,18 @@ function (_React$Component) {
   _createClass(ClickMe, [{
     key: "render",
     value: function render() {
-      var _this2 = this;
-
-      var fade = this.state.fade;
-      return React.createElement("button", {
-        ref: "button",
-        onClick: function onClick() {
-          return _this2.setState({
-            fade: true
-          });
-        },
-        onAnimationEnd: function onAnimationEnd() {
-          return setTimeout(_this2.setState({
-            fade: false
-          }), 5000);
-        },
-        className: fade ? 'fade' : ''
-      }, "Click me!");
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        className: "next",
+        style: this.state.buttonstyle,
+        onMouseEnter: this.getCoordinates
+      }, "Email your friends");
     }
   }]);
 
   return ClickMe;
-}(React.Component);
+}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
+
+
 
 /***/ }),
 
@@ -321,7 +338,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _ClickMe__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ClickMe */ "./client/components/ClickMe.jsx");
-/* harmony import */ var _ClickMe__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_ClickMe__WEBPACK_IMPORTED_MODULE_1__);
 
 
 
@@ -349,7 +365,7 @@ var Profile = function Profile(props) {
     src: profile.spiritAnimal[spiritAnimalIndex].image
   }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "shitty"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Age: ", profile.age[ageIndex]), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Star Sign: ", profile.starSign[starSignIndex]), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Fav Food: ", profile.faveFood[faveFoodIndex]), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Fav Gym Exercise: ", profile.faveGymExcercise[faveGymExcerciseIndex]), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Fav Clothing Item: ", profile.faveClothingItem[faveClothingItemIndex]), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Fav Car: ", profile.car[carIndex]), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Your Superpower: ", profile.superpower[superpowerIndex]), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Your Weakness: ", profile.weakness[weaknessIndex]), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Your Fetish: ", profile.fetish[fetishIndex])));
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Age: ", profile.age[ageIndex]), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Star Sign: ", profile.starSign[starSignIndex]), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Fav Food: ", profile.faveFood[faveFoodIndex]), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Fav Gym Exercise: ", profile.faveGymExcercise[faveGymExcerciseIndex]), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Fav Clothing Item: ", profile.faveClothingItem[faveClothingItemIndex]), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Fav Car: ", profile.car[carIndex]), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Your Superpower: ", profile.superpower[superpowerIndex]), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Your Weakness: ", profile.weakness[weaknessIndex]), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Your Fetish: ", profile.fetish[fetishIndex])), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ClickMe__WEBPACK_IMPORTED_MODULE_1__["default"], null));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Profile);
@@ -15393,7 +15409,7 @@ utils.intFromLE = intFromLE;
 /*! exports provided: _args, _development, _from, _id, _inBundle, _integrity, _location, _phantomChildren, _requested, _requiredBy, _resolved, _spec, _where, author, bugs, dependencies, description, devDependencies, files, homepage, keywords, license, main, name, repository, scripts, version, default */
 /***/ (function(module) {
 
-module.exports = {"_args":[["elliptic@6.4.1","/home/taine-walford/workspace/week-4-project-michelle"]],"_development":true,"_from":"elliptic@6.4.1","_id":"elliptic@6.4.1","_inBundle":false,"_integrity":"sha512-BsXLz5sqX8OHcsh7CqBMztyXARmGQ3LWPtGjJi6DiJHq5C/qvi9P3OqgswKSDftbu8+IoI/QDTAm2fFnQ9SZSQ==","_location":"/elliptic","_phantomChildren":{},"_requested":{"type":"version","registry":true,"raw":"elliptic@6.4.1","name":"elliptic","escapedName":"elliptic","rawSpec":"6.4.1","saveSpec":null,"fetchSpec":"6.4.1"},"_requiredBy":["/browserify-sign","/create-ecdh"],"_resolved":"https://registry.npmjs.org/elliptic/-/elliptic-6.4.1.tgz","_spec":"6.4.1","_where":"/home/taine-walford/workspace/week-4-project-michelle","author":{"name":"Fedor Indutny","email":"fedor@indutny.com"},"bugs":{"url":"https://github.com/indutny/elliptic/issues"},"dependencies":{"bn.js":"^4.4.0","brorand":"^1.0.1","hash.js":"^1.0.0","hmac-drbg":"^1.0.0","inherits":"^2.0.1","minimalistic-assert":"^1.0.0","minimalistic-crypto-utils":"^1.0.0"},"description":"EC cryptography","devDependencies":{"brfs":"^1.4.3","coveralls":"^2.11.3","grunt":"^0.4.5","grunt-browserify":"^5.0.0","grunt-cli":"^1.2.0","grunt-contrib-connect":"^1.0.0","grunt-contrib-copy":"^1.0.0","grunt-contrib-uglify":"^1.0.1","grunt-mocha-istanbul":"^3.0.1","grunt-saucelabs":"^8.6.2","istanbul":"^0.4.2","jscs":"^2.9.0","jshint":"^2.6.0","mocha":"^2.1.0"},"files":["lib"],"homepage":"https://github.com/indutny/elliptic","keywords":["EC","Elliptic","curve","Cryptography"],"license":"MIT","main":"lib/elliptic.js","name":"elliptic","repository":{"type":"git","url":"git+ssh://git@github.com/indutny/elliptic.git"},"scripts":{"jscs":"jscs benchmarks/*.js lib/*.js lib/**/*.js lib/**/**/*.js test/index.js","jshint":"jscs benchmarks/*.js lib/*.js lib/**/*.js lib/**/**/*.js test/index.js","lint":"npm run jscs && npm run jshint","test":"npm run lint && npm run unit","unit":"istanbul test _mocha --reporter=spec test/index.js","version":"grunt dist && git add dist/"},"version":"6.4.1"};
+module.exports = {"_args":[["elliptic@6.4.1","/home/eda/workspace/week-4-project-michelle"]],"_development":true,"_from":"elliptic@6.4.1","_id":"elliptic@6.4.1","_inBundle":false,"_integrity":"sha512-BsXLz5sqX8OHcsh7CqBMztyXARmGQ3LWPtGjJi6DiJHq5C/qvi9P3OqgswKSDftbu8+IoI/QDTAm2fFnQ9SZSQ==","_location":"/elliptic","_phantomChildren":{},"_requested":{"type":"version","registry":true,"raw":"elliptic@6.4.1","name":"elliptic","escapedName":"elliptic","rawSpec":"6.4.1","saveSpec":null,"fetchSpec":"6.4.1"},"_requiredBy":["/browserify-sign","/create-ecdh"],"_resolved":"https://registry.npmjs.org/elliptic/-/elliptic-6.4.1.tgz","_spec":"6.4.1","_where":"/home/eda/workspace/week-4-project-michelle","author":{"name":"Fedor Indutny","email":"fedor@indutny.com"},"bugs":{"url":"https://github.com/indutny/elliptic/issues"},"dependencies":{"bn.js":"^4.4.0","brorand":"^1.0.1","hash.js":"^1.0.0","hmac-drbg":"^1.0.0","inherits":"^2.0.1","minimalistic-assert":"^1.0.0","minimalistic-crypto-utils":"^1.0.0"},"description":"EC cryptography","devDependencies":{"brfs":"^1.4.3","coveralls":"^2.11.3","grunt":"^0.4.5","grunt-browserify":"^5.0.0","grunt-cli":"^1.2.0","grunt-contrib-connect":"^1.0.0","grunt-contrib-copy":"^1.0.0","grunt-contrib-uglify":"^1.0.1","grunt-mocha-istanbul":"^3.0.1","grunt-saucelabs":"^8.6.2","istanbul":"^0.4.2","jscs":"^2.9.0","jshint":"^2.6.0","mocha":"^2.1.0"},"files":["lib"],"homepage":"https://github.com/indutny/elliptic","keywords":["EC","Elliptic","curve","Cryptography"],"license":"MIT","main":"lib/elliptic.js","name":"elliptic","repository":{"type":"git","url":"git+ssh://git@github.com/indutny/elliptic.git"},"scripts":{"jscs":"jscs benchmarks/*.js lib/*.js lib/**/*.js lib/**/**/*.js test/index.js","jshint":"jscs benchmarks/*.js lib/*.js lib/**/*.js lib/**/**/*.js test/index.js","lint":"npm run jscs && npm run jshint","test":"npm run lint && npm run unit","unit":"istanbul test _mocha --reporter=spec test/index.js","version":"grunt dist && git add dist/"},"version":"6.4.1"};
 
 /***/ }),
 
