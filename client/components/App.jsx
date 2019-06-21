@@ -3,6 +3,7 @@ import { HashRouter as Router, Route, Switch } from "react-router-dom";
 
 import Home from './Home'
 import Question from './Question'
+import Profile from './Profile'
 import data from '../../data.json'
 
 class App extends React.Component {
@@ -33,12 +34,13 @@ class App extends React.Component {
           <Route exact path="/" render={(routeProps) => (
             <Home handleChange={this.handleChange} handleSubmit={this.handleSubmit} {...routeProps} />
           )} />
+          <Route exact path="/profile" render={(routeProps) => (
+            <Profile profile={data.profile} name={this.state.name} {...routeProps} />
+          )} />
           <Route path="/:id" render={(routeProps) => (
             <Question data={data.questions} handleChange={this.handleChange} handleSubmit={this.handleSubmit} {...routeProps} />
           )} />
-          <Route path="/profile" render={(routeProps) => (
-            <Profile profile={data.profile} name={this.state.name} {...routeProps} />
-          )} />
+
         </Switch>
       </Router>
     )
