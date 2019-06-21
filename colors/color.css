@@ -1,0 +1,92 @@
+* {
+  font-size: 100px;
+  font-weight: bolder;
+}
+
+.ugly-brown {
+  background-color: #774C1A;
+}
+
+.light-green {
+  color: rgb(223, 250, 196);
+}
+
+.light-grey {
+  background-color: #5F5F5F;
+}
+
+.lavender {
+  color: #D8B3F1;
+}
+
+.hot-pink-1 {
+  background-color: #FF00A2;
+}
+
+.light-pink {
+  color: #FF8686;
+}
+
+.bright-green {
+  color: rgb(101, 212, 27);
+}
+
+.grass-green {
+  background-color: #3E6027;
+}
+
+.hot-pink-2 {
+  background-color: #EC00FF;
+}
+
+.medium-grey {
+  color:  hsl(132, 47%, 16%);
+}
+
+.grey-purple {
+  background-color: #483349
+}
+
+.dark-purple {
+  color: #1A071B;
+}
+
+.light-sea-blue {
+  background-color: rgb(55, 131, 224);
+} 
+
+.dark-lavender {
+  color: #7F4EA4;
+}
+
+.faint-green {
+  background-color: rgb(130, 255, 34);
+}
+
+.blue-green {
+  color: #1D708D;
+}
+
+.dark-cherry-red {
+  background-color: #4C151F;
+}
+
+.highlight-yellow {
+  color: #F7FF00;
+}
+
+.ugly-green {
+  background-color: #63652A;
+}
+
+.green-grey {
+  color: #B5B6AB;
+}
+
+.lavender {
+  color: lavender;
+}
+
+.black {
+  background-color: black;
+}
