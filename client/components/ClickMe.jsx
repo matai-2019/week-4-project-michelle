@@ -1,12 +1,6 @@
-<<<<<<< HEAD
-import React, { Component } from 'react'
-
-export default class ClickMe extends Component {
-=======
 import React from 'react'
 
 export default class ClickMe extends React.Component {
->>>>>>> c41a8f82f20a172526bd337023264f93310f8f25
   constructor(props) {
     super(props)
     this.state = {
