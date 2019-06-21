@@ -6,7 +6,7 @@ import Home from '../client/components/Home'
 import Question from '../client/components/Question'
 
 test('<App />', () => {
-  const expected = 'Anti-personality Test'
+  const expected = 'ANTI-PERSONALITY TEST'
   const wrapper = mount(<App />)
   expect(wrapper.text()).toMatch(expected)
 })
