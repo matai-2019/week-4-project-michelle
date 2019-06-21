@@ -1,4 +1,5 @@
 import React from 'react'
+import ClickMe from './ClickMe'
 
 const random = (length) => {
   return Math.floor(Math.random() * Math.floor(length))
@@ -37,6 +38,8 @@ const Profile = (props) => {
         <p>Your Weakness: {profile.weakness[weaknessIndex]}</p>
         <p>Your Fetish: {profile.fetish[fetishIndex]}</p>
       </div>
+      <ClickMe />
+
     </>
   )
 }

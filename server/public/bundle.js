@@ -204,6 +204,76 @@ function (_React$Component) {
 
 /***/ }),
 
+/***/ "./client/components/ClickMe.jsx":
+/*!***************************************!*\
+  !*** ./client/components/ClickMe.jsx ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+var ClickMe =
+/*#__PURE__*/
+function (_React$Component) {
+  _inherits(ClickMe, _React$Component);
+
+  function ClickMe(props) {
+    var _this;
+
+    _classCallCheck(this, ClickMe);
+
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(ClickMe).call(this, props));
+    _this.state = {
+      fade: false
+    };
+    return _this;
+  }
+
+  _createClass(ClickMe, [{
+    key: "render",
+    value: function render() {
+      var _this2 = this;
+
+      var fade = this.state.fade;
+      return React.createElement("button", {
+        ref: "button",
+        onClick: function onClick() {
+          return _this2.setState({
+            fade: true
+          });
+        },
+        onAnimationEnd: function onAnimationEnd() {
+          return setTimeout(_this2.setState({
+            fade: false
+          }), 5000);
+        },
+        className: fade ? 'fade' : ''
+      }, "Click me!");
+    }
+  }]);
+
+  return ClickMe;
+}(React.Component);
+
+/***/ }),
+
 /***/ "./client/components/Home.jsx":
 /*!************************************!*\
   !*** ./client/components/Home.jsx ***!
@@ -250,6 +320,9 @@ var Home = function Home(props) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _ClickMe__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ClickMe */ "./client/components/ClickMe.jsx");
+/* harmony import */ var _ClickMe__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_ClickMe__WEBPACK_IMPORTED_MODULE_1__);
+
 
 
 var random = function random(length) {
@@ -274,9 +347,15 @@ var Profile = function Profile(props) {
     className: "head center"
   }, "ANTI-PERSONALITY TEST"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "".concat(props.name, ", here is your personality")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Spirit Animal: ", profile.spiritAnimal[spiritAnimalIndex].name), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: profile.spiritAnimal[spiritAnimalIndex].image
+<<<<<<< HEAD
   }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "shitty"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Age: ", profile.age[ageIndex]), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Star Sign: ", profile.starSign[starSignIndex]), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Fav Food: ", profile.faveFood[faveFoodIndex]), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Fav Gym Exercise: ", profile.faveGymExcercise[faveGymExcerciseIndex]), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Fav Clothing Item: ", profile.faveClothingItem[faveClothingItemIndex]), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Fav Car: ", profile.car[carIndex]), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Your Superpower: ", profile.superpower[superpowerIndex]), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Your Weakness: ", profile.weakness[weaknessIndex]), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Your Fetish: ", profile.fetish[fetishIndex])));
+||||||| merged common ancestors
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Age: ", profile.age[ageIndex]), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Star Sign: ", profile.starSign[starSignIndex]), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Fav Food: ", profile.faveFood[faveFoodIndex]), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Fav Gym Exercise: ", profile.faveGymExcercise[faveGymExcerciseIndex]), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Fav Clothing Item: ", profile.faveClothingItem[faveClothingItemIndex]), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Fav Car: ", profile.car[carIndex]), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Your Superpower: ", profile.superpower[superpowerIndex]), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Your Weakness: ", profile.weakness[weaknessIndex]), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Your Fetish: ", profile.fetish[fetishIndex])));
+=======
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Age: ", profile.age[ageIndex]), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Star Sign: ", profile.starSign[starSignIndex]), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Fav Food: ", profile.faveFood[faveFoodIndex]), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Fav Gym Exercise: ", profile.faveGymExcercise[faveGymExcerciseIndex]), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Fav Clothing Item: ", profile.faveClothingItem[faveClothingItemIndex]), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Fav Car: ", profile.car[carIndex]), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Your Superpower: ", profile.superpower[superpowerIndex]), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Your Weakness: ", profile.weakness[weaknessIndex]), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Your Fetish: ", profile.fetish[fetishIndex])), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ClickMe__WEBPACK_IMPORTED_MODULE_1___default.a, null));
+>>>>>>> 9f42b4219235c3308200b5acf0070f833d1d081a
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Profile);
@@ -374,7 +453,7 @@ document.addEventListener('DOMContentLoaded', function () {
 /*! exports provided: profile, questions, default */
 /***/ (function(module) {
 
-module.exports = {"profile":[{"spiritAnimal":[{"name":"Skunk","image":"/images/skunk.jpg"},{"name":"Mosquito","image":"/images/mosquito.jpg"},{"name":"Dung","image":"/images/dung.jpg"},{"name":"Stag Beetle","image":"/images/stagBeetle.jpg"},{"name":"Monster Slug","image":"/images/monsterSlug.jpg"},{"name":"Kung Fu Panda","image":"/images/kungfuPanda.jpg"},{"name":"Purple frog","image":"/images/purpleFrog.jpg"},{"name":"Shoebill","image":"/images/shoebill.jpg"},{"name":"Sri Lanka Frogmouth","image":"/images/sriLankaFrogMouth.jpg"},{"name":"Venezuelan Paddel Moth","image":"/images/venezuelanPoddleMoth.jpg"},{"name":"Water Opossum","image":"/images/waterOpossum.jpg"}],"age":["sprout","grey in places","know it all, remeber nothing","dinasour"],"starSign":["Seahorse","Three Legged Cow","Sleeping Hippo","Dancing Spider","Unicorn"],"faveFood":["chicken’s feet","vegemite","frog legs","last years cheesburger","duck feet","dried crickets"],"faveGymExcercise":["one extra loud push up","walking around with heavy dumbel","duck walk","one legged cyclist"],"faveClothingItem":["zebra tights","orange (prison) overalls","G-string","white kimono with ketchup stains"],"car":["pumpkin carriage","flying carpet","ice cream truck","ostrich","Honda Civic","Porsche lego model","The entire Hot Wheels Collection","Countdown Trolley"],"superpower":["ability to remember names of a group of people you have just met","ability to make hand shadow puppets in any shape","ability to always locate your keys","ability to see through clothing","you are never hungry","ability to communicate with fruits","ability to change TV channels at will","medium strength","huge thighs","6ft long legs","thick arteries"],"weakness":["blond people","creepy clowns","melt with rain","die if not looked at facebook for a day","headstones","toddlers","Kim Jung Un","scissors"],"fetish":["smell of petrol","playing with veggies in soup","collecting wine corks for a raft","old suitcases","pain","handcuffs","robots","skylines"]}],"questions":[{"question":"Do you have all 4 wisdom teeth?","answers":["yes","no","I don't know","What are wisdom teeth?"]},{"question":"You are in a car with alpaca, sheep and chicken. What do you do?","answers":["keep driving","ask sheep to leave","take a navigator seat"," invite a hedgehog to join"]},{"question":"What’s the first thing that comes to your mind when you think about vacation?","answers":["pancakes","goat!","white walls","albino peackok"]},{"question":"Pick a pillow you would sleep on:","answers":["I don’t use pillows","memory foam","down ","doesn’t matter"]},{"question":"In the kitchen your favourite utensil is:","answers":["knife","fork","rollerpin","mug"]},{"question":"You are most scared of:","answers":["ghosts","children","koreans","barbers"]},{"question":"In your dreams, you: ","answers":["throw shitty punches","run really slowly","can jump high enough to consider it flying","die a lot"]},{"question":"Your favourite movie is:","answers":["F&F: Tokyo Drift","Gone in 60 seconds","Speed Racer","Jackass"]},{"question":"Are you a cop?","answers":["Yes, I am a police officer","No way, dude","Whoa, calm down","Why is this relevant?"]},{"question":"A plane crashes on the United States - Canada border. Where are the survivors buried?","answers":["Depends on nationality","Canada","United States","Mexico"]},{"question":"Cat is to Dog, as Snake is to ...","answers":["Grasshopper","Dog","Alligator","Grass"]}]};
+module.exports = {"profile":[{"spiritAnimal":[{"name":"Skunk","image":"/images/skunk.jpg"},{"name":"Mosquito","image":"/images/mosquito.jpg"},{"name":"Dung","image":"/images/dung.jpg"},{"name":"Stag Beetle","image":"/images/stagBeetle.jpg"},{"name":"Monster Slug","image":"/images/monsterSlug.jpg"},{"name":"Kung Fu Panda","image":"/images/kungfuPanda.jpg"},{"name":"Purple frog","image":"/images/purpleFrog.jpg"},{"name":"Shoebill","image":"/images/shoebill.jpg"},{"name":"Sri Lanka Frogmouth","image":"/images/sriLankaFrogMouth.jpg"},{"name":"Venezuelan Paddel Moth","image":"/images/venezualanPoddleMoth.jpg"},{"name":"Water Opossum","image":"/images/waterOpossum.jpg"}],"age":["sprout","grey in places","know it all, remeber nothing","dinasour"],"starSign":["Seahorse","Three Legged Cow","Sleeping Hippo","Dancing Spider","Unicorn"],"faveFood":["chicken’s feet","vegemite","frog legs","last years cheesburger","duck feet","dried crickets"],"faveGymExcercise":["one extra loud push up","walking around with heavy dumbel","duck walk","one legged cyclist"],"faveClothingItem":["zebra tights","orange (prison) overalls","G-string","white kimono with ketchup stains"],"car":["pumpkin carriage","flying carpet","ice cream truck","ostrich","Honda Civic","Porsche lego model","The entire Hot Wheels Collection","Countdown Trolley"],"superpower":["ability to remember names of a group of people you have just met","ability to make hand shadow puppets in any shape","ability to always locate your keys","ability to see through clothing","you are never hungry","ability to communicate with fruits","ability to change TV channels at will","medium strength","huge thighs","6ft long legs","thick arteries"],"weakness":["blond people","creepy clowns","melt with rain","die if not looked at facebook for a day","headstones","toddlers","Kim Jung Un","scissors"],"fetish":["smell of petrol","playing with veggies in soup","collecting wine corks for a raft","old suitcases","pain","handcuffs","robots","skylines"]}],"questions":[{"question":"Do you have all 4 wisdom teeth?","answers":["yes","no","I don't know","What are wisdom teeth?"]},{"question":"You are in a car with alpaca, sheep and chicken. What do you do?","answers":["keep driving","ask sheep to leave","take a navigator seat"," invite a hedgehog to join"]},{"question":"What’s the first thing that comes to your mind when you think about vacation?","answers":["pancakes","goat!","white walls","albino peackok"]},{"question":"Pick a pillow you would sleep on:","answers":["I don’t use pillows","memory foam","down ","doesn’t matter"]},{"question":"In the kitchen your favourite utensil is:","answers":["knife","fork","rollerpin","mug"]},{"question":"You are most scared of:","answers":["ghosts","children","koreans","barbers"]},{"question":"In your dreams, you: ","answers":["throw shitty punches","run really slowly","can jump high enough to consider it flying","die a lot"]},{"question":"Your favourite movie is:","answers":["F&F: Tokyo Drift","Gone in 60 seconds","Speed Racer","Jackass"]},{"question":"Are you a cop?","answers":["Yes, I am a police officer","No way, dude","Whoa, calm down","Why is this relevant?"]},{"question":"A plane crashes on the United States - Canada border. Where are the survivors buried?","answers":["Depends on nationality","Canada","United States","Mexico"]},{"question":"Cat is to Dog, as Snake is to ...","answers":["Grasshopper","Dog","Alligator","Grass"]}]};
 
 /***/ }),
 
