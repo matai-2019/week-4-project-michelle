@@ -353,7 +353,11 @@ var Profile = function Profile(props) {
     className: "almostCentered"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
     className: "head center"
-  }, "ANTI-PERSONALITY TEST"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "".concat(props.name, ", here is your personality")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Spirit Animal: ", profile.spiritAnimal[spiritAnimalIndex].name), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+  }, "ANTI-PERSONALITY TEST"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
+    className: "shitty"
+  }, "".concat(props.name, ", here is your personality")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "shitty"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Spirit Animal: ", profile.spiritAnimal[spiritAnimalIndex].name), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: profile.spiritAnimal[spiritAnimalIndex].image
   }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "shitty"

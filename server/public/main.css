@@ -1,7 +1,8 @@
 body {
+  background-image: url('https://www.tynker.com/minecraft/api/block?id=5748700165e4f277138b4567&w=400&h=400&width=400&height=400&mode=contain&format=jpg&quality=75&cache=1m&v=1464365057');
+  background-size: 64px;
   font-family: 'Lato', sans-serif;
-  font-weight: 300;
-  background-color: var(--main-f);
+  font-weight: 30
   margin: 0px;
   padding: 0px;
   font-size: 25px;
@@ -169,5 +170,8 @@ img {
 }
 
 .shitty {
+  font-weight: 600;
   margin-left: 5vw;
+  width: 600px;
+  background-color: rgba(255, 255, 255, 0.5)
 }

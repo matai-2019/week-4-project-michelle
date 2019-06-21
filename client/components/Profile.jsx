@@ -21,8 +21,8 @@ const Profile = (props) => {
     <>
       <div className="almostCentered">
         <h1 className="head center">ANTI-PERSONALITY TEST</h1>
-        <h3>{`${props.name}, here is your personality`}</h3>
-        <div>
+        <h3 className='shitty'>{`${props.name}, here is your personality`}</h3>
+        <div className='shitty'>
           <p>Spirit Animal: {profile.spiritAnimal[spiritAnimalIndex].name}</p>
           <img src={profile.spiritAnimal[spiritAnimalIndex].image}></img>
         </div>
