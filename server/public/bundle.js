@@ -220,15 +220,19 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var Home = function Home(props) {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Anti-personality Test"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+    className: "head center"
+  }, "ANTI-PERSONALITY TEST"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
+    className: "center",
     onSubmit: props.handleSubmit
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", null, "Please enter your name:", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", null, "please enter ur name ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
     type: "text",
     name: "name",
+    placeholder: "name pls",
     onChange: props.handleChange
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
     to: "/0"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", null, "Next"))));
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", null, "b u t t on"))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Home);
@@ -264,9 +268,15 @@ var Profile = function Profile(props) {
   var weaknessIndex = random(profile.weakness.length);
   var fetishIndex = random(profile.fetish.length);
   var spiritAnimalIndex = random(profile.spiritAnimal.length);
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Anti-personality Test"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "".concat(props.name, ", here is your personality")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Spirit Animal: ", profile.spiritAnimal[spiritAnimalIndex].name), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "almostCentered"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+    className: "head center"
+  }, "ANTI-PERSONALITY TEST"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "".concat(props.name, ", here is your personality")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Spirit Animal: ", profile.spiritAnimal[spiritAnimalIndex].name), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: profile.spiritAnimal[spiritAnimalIndex].image
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Age: ", profile.age[ageIndex]), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Star Sign: ", profile.starSign[starSignIndex]), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Fav Food: ", profile.faveFood[faveFoodIndex]), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Fav Gym Exercise: ", profile.faveGymExcercise[faveGymExcerciseIndex]), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Fav Clothing Item: ", profile.faveClothingItem[faveClothingItemIndex]), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Fav Car: ", profile.car[carIndex]), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Your Superpower: ", profile.superpower[superpowerIndex]), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Your Weakness: ", profile.weakness[weaknessIndex]), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Your Fetish: ", profile.fetish[fetishIndex])));
+  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "shitty"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Age: ", profile.age[ageIndex]), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Star Sign: ", profile.starSign[starSignIndex]), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Fav Food: ", profile.faveFood[faveFoodIndex]), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Fav Gym Exercise: ", profile.faveGymExcercise[faveGymExcerciseIndex]), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Fav Clothing Item: ", profile.faveClothingItem[faveClothingItemIndex]), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Fav Car: ", profile.car[carIndex]), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Your Superpower: ", profile.superpower[superpowerIndex]), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Your Weakness: ", profile.weakness[weaknessIndex]), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Your Fetish: ", profile.fetish[fetishIndex])));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Profile);
@@ -43132,7 +43142,7 @@ if (false) {} else {
 /*!***************************************************************!*\
   !*** ./node_modules/react-router-dom/esm/react-router-dom.js ***!
   \***************************************************************/
-/*! exports provided: BrowserRouter, HashRouter, Link, NavLink, MemoryRouter, Prompt, Redirect, Route, Router, StaticRouter, Switch, generatePath, matchPath, withRouter, __RouterContext */
+/*! exports provided: MemoryRouter, Prompt, Redirect, Route, Router, StaticRouter, Switch, generatePath, matchPath, withRouter, __RouterContext, BrowserRouter, HashRouter, Link, NavLink */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
